@@ -9,7 +9,7 @@ user node[:user][:name] do
   home "/home/#{node[:user][:name]}"
   gid 'admin'
   password "#{node[:user][:password]}"
-  supports manage_home: true
+  supports :manage_home => true
   shell '/bin/zsh'
 end
 
