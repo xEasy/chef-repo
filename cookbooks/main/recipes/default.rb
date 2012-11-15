@@ -1,6 +1,8 @@
 package 'git-core'
 package 'zsh'
 
+include_recipe 'nginx::source'
+
 user node[:user][:name] do
   username "#{node[:user][:name]}"
   home "/home/#{node[:user][:name]}"
