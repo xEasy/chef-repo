@@ -3,16 +3,15 @@ package 'zsh'
 
 include_recipe 'nginx::source'
 
-user node[:user][:name] do
-  username "#{node[:user][:name]}"
-  home "/home/#{node[:user][:name]}"
+user 'deployer' do
+  home "/home/deployer"
   gid 'admin'
-  password "#{node[:user][:password]}"
+  password "123"
   supports manage_home: true
   shell '/bin/zsh'
 end
 
-template "/home/#{node[:user][:name]}/.zshrc" do
+template "/home/deployer/.zshrc" do
   source 'zshrc.erb'
-  owner node[:user][:name]
+  owner 'deployer'
 end
