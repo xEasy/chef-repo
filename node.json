@@ -1,8 +1,8 @@
 {
   'user': {
-    'name': 'deployer',
+    'name': 'deploy',
     'password': '123',
     'ls_color': true
   },
-  'run_list': ['recipe[main]']
+  'run_list': ['recipe[main]', 'nginx::source']
 }
