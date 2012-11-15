@@ -1,0 +1,10 @@
+{
+  'user': {
+    'name': 'deployer',
+    'password': '123',
+    'ls_color': true
+  },
+  'run_list': {
+    'recipe[main]'
+  }
+}
