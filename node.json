@@ -4,5 +4,5 @@
     "password": "123",
     "ls_color": true
   },
-  "run_list": ["recipe[main]"]
+  "run_list": ["recipe[main]", "recipe[sqlite]", "recipe[openssh]", "recipe[mysql]"]
 }
