@@ -1,3 +1,0 @@
-[submodule "cookbooks/monit"]
-	path = cookbooks/monit
-	url = git://github.com/apsoto/monit.git
