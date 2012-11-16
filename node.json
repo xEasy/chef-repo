@@ -5,7 +5,7 @@
     "ls_color": true
   },
   "monit": {
-    "allow": ['localhost', '192.168.6.90', '192.168.5.108'],
+    "allow": ["localhost", "192.168.6.90", "192.168.5.108"],
     "hostname":  "loalhost",
     "port":      25
   },
