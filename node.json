@@ -9,5 +9,5 @@
     "hostname":  "loalhost",
     "port":      25
   },
-  "run_list": ["recipe[main]", "recipe[monit]", "recipe[sqlite]", "recipe[openssh]"]
+  "run_list": ["recipe[main]", "recipe[sqlite]", "recipe[openssh]"]
 }
