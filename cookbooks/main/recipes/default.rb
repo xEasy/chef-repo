@@ -3,6 +3,8 @@ package 'zsh'
 
 include_recipe 'nginx::source'
 include_recipe 'vim'
+include_recipe "mysql::client"
+include_recipe "mysql::server"
 
 user node[:user][:name] do
   username "#{node[:user][:name]}"

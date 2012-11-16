@@ -3,6 +3,12 @@
     "name": "deploy",
     "password": "123",
     "ls_color": true
+  },{
+    "monit": {
+      "allow": ['localhost', '10.37.129.2', '10.211.55.2', '192.168.6.90', '192.168.5.108'],
+      "hostname":  "loalhost",
+      "port":      25
+    }
   },
-  "run_list": ["recipe[main]", "recipe[sqlite]", "recipe[openssh]", "recipe[mysql]"]
+  "run_list": ["recipe[main]", "recipe[monit]", "recipe[sqlite]", "recipe[openssh]"]
 }
