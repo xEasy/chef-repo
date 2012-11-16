@@ -1,7 +1,7 @@
 package 'git-core'
 package 'zsh'
 
-#include_recipe 'nginx::source'
+include_recipe 'nginx::source'
 include_recipe 'vim'
 
 user node[:user][:name] do
